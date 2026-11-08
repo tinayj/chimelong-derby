@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Chimelong Marketing Derby 2026 | The Ultimate Shake-to-Run Showdown</title>
+  <!-- Inlined Pure JS QR Code Engine (100% Offline & Public Resilient) -->
+  <script>
+  var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this.parsedData=[];for(var b=[],d=0,e=this.data.length;e>d;d++){var f=this.data.charCodeAt(d);f>65536?(b[0]=240|(1835008&f)>>>18,b[1]=128|(258048&f)>>>12,b[2]=128|(4032&f)>>>6,b[3]=128|63&f):f>2048?(b[0]=224|(61440&f)>>>12,b[1]=128|(4032&f)>>>6,b[2]=128|63&f):f>128?(b[0]=192|(1984&f)>>>6,b[1]=128|63&f):b[0]=f,this.parsedData=this.parsedData.concat(b)}this.parsedData.length!=this.data.length&&(this.parsedData.unshift(191),this.parsedData.unshift(187),this.parsedData.unshift(239))}function b(a,b){this.typeNumber=a,this.errorCorrectLevel=b,this.modules=null,this.moduleCount=0,this.dataCache=null,this.dataList=[]}function i(a,b){if(void 0==a.length)throw new Error(a.length+"/"+b);for(var c=0;c<a.length&&0==a[c];)c++;this.num=new Array(a.length-c+b);for(var d=0;d<a.length-c;d++)this.num[d]=a[d+c]}function j(a,b){this.totalCount=a,this.dataCount=b}function k(){this.buffer=[],this.length=0}function m(){return"undefined"!=typeof CanvasRenderingContext2D}function n(){var a=!1,b=navigator.userAgent;return/android/i.test(b)&&(a=!0,aMat=b.toString().match(/android ([0-9]\.[0-9])/i),aMat&&aMat[1]&&(a=parseFloat(aMat[1]))),a}function r(a,b){for(var c=1,e=s(a),f=0,g=l.length;g>=f;f++){var h=0;switch(b){case d.L:h=l[f][0];break;case d.M:h=l[f][1];break;case d.Q:h=l[f][2];break;case d.H:h=l[f][3]}if(h>=e)break;c++}if(c>l.length)throw new Error("Too long data");return c}function s(a){var b=encodeURI(a).toString().replace(/\%[0-9a-fA-F]{2}/g,"a");return b.length+(b.length!=a?3:0)}a.prototype={getLength:function(){return this.parsedData.length},write:function(a){for(var b=0,c=this.parsedData.length;c>b;b++)a.put(this.parsedData[b],8)}},b.prototype={addData:function(b){var c=new a(b);this.dataList.push(c),this.dataCache=null},isDark:function(a,b){if(0>a||this.moduleCount<=a||0>b||this.moduleCount<=b)throw new Error(a+","+b);return this.modules[a][b]},getModuleCount:function(){return this.moduleCount},make:function(){this.makeImpl(!1,this.getBestMaskPattern())},makeImpl:function(a,c){this.moduleCount=4*this.typeNumber+17,this.modules=new Array(this.moduleCount);for(var d=0;d<this.moduleCount;d++){this.modules[d]=new Array(this.moduleCount);for(var e=0;e<this.moduleCount;e++)this.modules[d][e]=null}this.setupPositionProbePattern(0,0),this.setupPositionProbePattern(this.moduleCount-7,0),this.setupPositionProbePattern(0,this.moduleCount-7),this.setupPositionAdjustPattern(),this.setupTimingPattern(),this.setupTypeInfo(a,c),this.typeNumber>=7&&this.setupTypeNumber(a),null==this.dataCache&&(this.dataCache=b.createData(this.typeNumber,this.errorCorrectLevel,this.dataList)),this.mapData(this.dataCache,c)},setupPositionProbePattern:function(a,b){for(var c=-1;7>=c;c++)if(!(-1>=a+c||this.moduleCount<=a+c))for(var d=-1;7>=d;d++)-1>=b+d||this.moduleCount<=b+d||(this.modules[a+c][b+d]=c>=0&&6>=c&&(0==d||6==d)||d>=0&&6>=d&&(0==c||6==c)||c>=2&&4>=c&&d>=2&&4>=d?!0:!1)},getBestMaskPattern:function(){for(var a=0,b=0,c=0;8>c;c++){this.makeImpl(!0,c);var d=f.getLostPoint(this);(0==c||a>d)&&(a=d,b=c)}return b},createMovieClip:function(a,b,c){var d=a.createEmptyMovieClip(b,c),e=1;this.make();for(var f=0;f<this.modules.length;f++)for(var g=f*e,h=0;h<this.modules[f].length;h++){var i=h*e,j=this.modules[f][h];j&&(d.beginFill(0,100),d.moveTo(i,g),d.lineTo(i+e,g),d.lineTo(i+e,g+e),d.lineTo(i,g+e),d.endFill())}return d},setupTimingPattern:function(){for(var a=8;a<this.moduleCount-8;a++)null==this.modules[a][6]&&(this.modules[a][6]=0==a%2);for(var b=8;b<this.moduleCount-8;b++)null==this.modules[6][b]&&(this.modules[6][b]=0==b%2)},setupPositionAdjustPattern:function(){for(var a=f.getPatternPosition(this.typeNumber),b=0;b<a.length;b++)for(var c=0;c<a.length;c++){var d=a[b],e=a[c];if(null==this.modules[d][e])for(var g=-2;2>=g;g++)for(var h=-2;2>=h;h++)this.modules[d+g][e+h]=-2==g||2==g||-2==h||2==h||0==g&&0==h?!0:!1}},setupTypeNumber:function(a){for(var b=f.getBCHTypeNumber(this.typeNumber),c=0;18>c;c++){var d=!a&&1==(1&b>>c);this.modules[Math.floor(c/3)][c%3+this.moduleCount-8-3]=d}for(var c=0;18>c;c++){var d=!a&&1==(1&b>>c);this.modules[c%3+this.moduleCount-8-3][Math.floor(c/3)]=d}},setupTypeInfo:function(a,b){for(var c=this.errorCorrectLevel<<3|b,d=f.getBCHTypeInfo(c),e=0;15>e;e++){var g=!a&&1==(1&d>>e);6>e?this.modules[e][8]=g:8>e?this.modules[e+1][8]=g:this.modules[this.moduleCount-15+e][8]=g}for(var e=0;15>e;e++){var g=!a&&1==(1&d>>e);8>e?this.modules[8][this.moduleCount-e-1]=g:9>e?this.modules[8][15-e-1+1]=g:this.modules[8][15-e-1]=g}this.modules[this.moduleCount-8][8]=!a},mapData:function(a,b){for(var c=-1,d=this.moduleCount-1,e=7,g=0,h=this.moduleCount-1;h>0;h-=2)for(6==h&&h--;;){for(var i=0;2>i;i++)if(null==this.modules[d][h-i]){var j=!1;g<a.length&&(j=1==(1&a[g]>>>e));var k=f.getMask(b,d,h-i);k&&(j=!j),this.modules[d][h-i]=j,e--,-1==e&&(g++,e=7)}if(d+=c,0>d||this.moduleCount<=d){d-=c,c=-c;break}}}},b.PAD0=236,b.PAD1=17,b.createData=function(a,c,d){for(var e=j.getRSBlocks(a,c),g=new k,h=0;h<d.length;h++){var i=d[h];g.put(i.mode,4),g.put(i.getLength(),f.getLengthInBits(i.mode,a)),i.write(g)}for(var l=0,h=0;h<e.length;h++)l+=e[h].dataCount;if(g.getLengthInBits()>8*l)throw new Error("code length overflow. ("+g.getLengthInBits()+">"+8*l+")");for(g.getLengthInBits()+4<=8*l&&g.put(0,4);0!=g.getLengthInBits()%8;)g.putBit(!1);for(;;){if(g.getLengthInBits()>=8*l)break;if(g.put(b.PAD0,8),g.getLengthInBits()>=8*l)break;g.put(b.PAD1,8)}return b.createBytes(g,e)},b.createBytes=function(a,b){for(var c=0,d=0,e=0,g=new Array(b.length),h=new Array(b.length),j=0;j<b.length;j++){var k=b[j].dataCount,l=b[j].totalCount-k;d=Math.max(d,k),e=Math.max(e,l),g[j]=new Array(k);for(var m=0;m<g[j].length;m++)g[j][m]=255&a.buffer[m+c];c+=k;var n=f.getErrorCorrectPolynomial(l),o=new i(g[j],n.getLength()-1),p=o.mod(n);h[j]=new Array(n.getLength()-1);for(var m=0;m<h[j].length;m++){var q=m+p.getLength()-h[j].length;h[j][m]=q>=0?p.get(q):0}}for(var r=0,m=0;m<b.length;m++)r+=b[m].totalCount;for(var s=new Array(r),t=0,m=0;d>m;m++)for(var j=0;j<b.length;j++)m<g[j].length&&(s[t++]=g[j][m]);for(var m=0;e>m;m++)for(var j=0;j<b.length;j++)m<h[j].length&&(s[t++]=h[j][m]);return s};for(var c={MODE_NUMBER:1,MODE_ALPHA_NUM:2,MODE_8BIT_BYTE:4,MODE_KANJI:8},d={L:1,M:0,Q:3,H:2},e={PATTERN000:0,PATTERN001:1,PATTERN010:2,PATTERN011:3,PATTERN100:4,PATTERN101:5,PATTERN110:6,PATTERN111:7},f={PATTERN_POSITION_TABLE:[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],G15:1335,G18:7973,G15_MASK:21522,getBCHTypeInfo:function(a){for(var b=a<<10;f.getBCHDigit(b)-f.getBCHDigit(f.G15)>=0;)b^=f.G15<<f.getBCHDigit(b)-f.getBCHDigit(f.G15);return(a<<10|b)^f.G15_MASK},getBCHTypeNumber:function(a){for(var b=a<<12;f.getBCHDigit(b)-f.getBCHDigit(f.G18)>=0;)b^=f.G18<<f.getBCHDigit(b)-f.getBCHDigit(f.G18);return a<<12|b},getBCHDigit:function(a){for(var b=0;0!=a;)b++,a>>>=1;return b},getPatternPosition:function(a){return f.PATTERN_POSITION_TABLE[a-1]},getMask:function(a,b,c){switch(a){case e.PATTERN000:return 0==(b+c)%2;case e.PATTERN001:return 0==b%2;case e.PATTERN010:return 0==c%3;case e.PATTERN011:return 0==(b+c)%3;case e.PATTERN100:return 0==(Math.floor(b/2)+Math.floor(c/3))%2;case e.PATTERN101:return 0==b*c%2+b*c%3;case e.PATTERN110:return 0==(b*c%2+b*c%3)%2;case e.PATTERN111:return 0==(b*c%3+(b+c)%2)%2;default:throw new Error("bad maskPattern:"+a)}},getErrorCorrectPolynomial:function(a){for(var b=new i([1],0),c=0;a>c;c++)b=b.multiply(new i([1,g.gexp(c)],0));return b},getLengthInBits:function(a,b){if(b>=1&&10>b)switch(a){case c.MODE_NUMBER:return 10;case c.MODE_ALPHA_NUM:return 9;case c.MODE_8BIT_BYTE:return 8;case c.MODE_KANJI:return 8;default:throw new Error("mode:"+a)}else if(27>b)switch(a){case c.MODE_NUMBER:return 12;case c.MODE_ALPHA_NUM:return 11;case c.MODE_8BIT_BYTE:return 16;case c.MODE_KANJI:return 10;default:throw new Error("mode:"+a)}else{if(!(41>b))throw new Error("type:"+b);switch(a){case c.MODE_NUMBER:return 14;case c.MODE_ALPHA_NUM:return 13;case c.MODE_8BIT_BYTE:return 16;case c.MODE_KANJI:return 12;default:throw new Error("mode:"+a)}}},getLostPoint:function(a){for(var b=a.getModuleCount(),c=0,d=0;b>d;d++)for(var e=0;b>e;e++){for(var f=0,g=a.isDark(d,e),h=-1;1>=h;h++)if(!(0>d+h||d+h>=b))for(var i=-1;1>=i;i++)0>e+i||e+i>=b||(0!=h||0!=i)&&g==a.isDark(d+h,e+i)&&f++;f>5&&(c+=3+f-5)}for(var d=0;b-1>d;d++)for(var e=0;b-1>e;e++){var j=0;a.isDark(d,e)&&j++,a.isDark(d+1,e)&&j++,a.isDark(d,e+1)&&j++,a.isDark(d+1,e+1)&&j++,(0==j||4==j)&&(c+=3)}for(var d=0;b>d;d++)for(var e=0;b-6>e;e++)a.isDark(d,e)&&!a.isDark(d,e+1)&&a.isDark(d,e+2)&&a.isDark(d,e+3)&&a.isDark(d,e+4)&&!a.isDark(d,e+5)&&a.isDark(d,e+6)&&(c+=40);for(var e=0;b>e;e++)for(var d=0;b-6>d;d++)a.isDark(d,e)&&!a.isDark(d+1,e)&&a.isDark(d+2,e)&&a.isDark(d+3,e)&&a.isDark(d+4,e)&&!a.isDark(d+5,e)&&a.isDark(d+6,e)&&(c+=40);for(var k=0,e=0;b>e;e++)for(var d=0;b>d;d++)a.isDark(d,e)&&k++;var l=Math.abs(100*k/b/b-50)/5;return c+=10*l}},g={glog:function(a){if(1>a)throw new Error("glog("+a+")");return g.LOG_TABLE[a]},gexp:function(a){for(;0>a;)a+=255;for(;a>=256;)a-=255;return g.EXP_TABLE[a]},EXP_TABLE:new Array(256),LOG_TABLE:new Array(256)},h=0;8>h;h++)g.EXP_TABLE[h]=1<<h;for(var h=8;256>h;h++)g.EXP_TABLE[h]=g.EXP_TABLE[h-4]^g.EXP_TABLE[h-5]^g.EXP_TABLE[h-6]^g.EXP_TABLE[h-8];for(var h=0;255>h;h++)g.LOG_TABLE[g.EXP_TABLE[h]]=h;i.prototype={get:function(a){return this.num[a]},getLength:function(){return this.num.length},multiply:function(a){for(var b=new Array(this.getLength()+a.getLength()-1),c=0;c<this.getLength();c++)for(var d=0;d<a.getLength();d++)b[c+d]^=g.gexp(g.glog(this.get(c))+g.glog(a.get(d)));return new i(b,0)},mod:function(a){if(this.getLength()-a.getLength()<0)return this;for(var b=g.glog(this.get(0))-g.glog(a.get(0)),c=new Array(this.getLength()),d=0;d<this.getLength();d++)c[d]=this.get(d);for(var d=0;d<a.getLength();d++)c[d]^=g.gexp(g.glog(a.get(d))+b);return new i(c,0).mod(a)}},j.RS_BLOCK_TABLE=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],j.getRSBlocks=function(a,b){var c=j.getRsBlockTable(a,b);if(void 0==c)throw new Error("bad rs block @ typeNumber:"+a+"/errorCorrectLevel:"+b);for(var d=c.length/3,e=[],f=0;d>f;f++)for(var g=c[3*f+0],h=c[3*f+1],i=c[3*f+2],k=0;g>k;k++)e.push(new j(h,i));return e},j.getRsBlockTable=function(a,b){switch(b){case d.L:return j.RS_BLOCK_TABLE[4*(a-1)+0];case d.M:return j.RS_BLOCK_TABLE[4*(a-1)+1];case d.Q:return j.RS_BLOCK_TABLE[4*(a-1)+2];case d.H:return j.RS_BLOCK_TABLE[4*(a-1)+3];default:return void 0}},k.prototype={get:function(a){var b=Math.floor(a/8);return 1==(1&this.buffer[b]>>>7-a%8)},put:function(a,b){for(var c=0;b>c;c++)this.putBit(1==(1&a>>>b-c-1))},getLengthInBits:function(){return this.length},putBit:function(a){var b=Math.floor(this.length/8);this.buffer.length<=b&&this.buffer.push(0),a&&(this.buffer[b]|=128>>>this.length%8),this.length++}};var l=[[17,14,11,7],[32,26,20,14],[53,42,32,24],[78,62,46,34],[106,84,60,44],[134,106,74,58],[154,122,86,64],[192,152,108,84],[230,180,130,98],[271,213,151,119],[321,251,177,137],[367,287,203,155],[425,331,241,177],[458,362,258,194],[520,412,292,220],[586,450,322,250],[644,504,364,280],[718,560,394,310],[792,624,442,338],[858,666,482,382],[929,711,509,403],[1003,779,565,439],[1091,857,611,461],[1171,911,661,511],[1273,997,715,535],[1367,1059,751,593],[1465,1125,805,625],[1528,1190,868,658],[1628,1264,908,698],[1732,1370,982,742],[1840,1452,1030,790],[1952,1538,1112,842],[2068,1628,1168,898],[2188,1722,1228,958],[2303,1809,1283,983],[2431,1911,1351,1051],[2563,1989,1423,1093],[2699,2099,1499,1139],[2809,2213,1579,1219],[2953,2331,1663,1273]],o=function(){var a=function(a,b){this._el=a,this._htOption=b};return a.prototype.draw=function(a){function g(a,b){var c=document.createElementNS("http://www.w3.org/2000/svg",a);for(var d in b)b.hasOwnProperty(d)&&c.setAttribute(d,b[d]);return c}var b=this._htOption,c=this._el,d=a.getModuleCount();Math.floor(b.width/d),Math.floor(b.height/d),this.clear();var h=g("svg",{viewBox:"0 0 "+String(d)+" "+String(d),width:"100%",height:"100%",fill:b.colorLight});h.setAttributeNS("http://www.w3.org/2000/xmlns/","xmlns:xlink","http://www.w3.org/1999/xlink"),c.appendChild(h),h.appendChild(g("rect",{fill:b.colorDark,width:"1",height:"1",id:"template"}));for(var i=0;d>i;i++)for(var j=0;d>j;j++)if(a.isDark(i,j)){var k=g("use",{x:String(i),y:String(j)});k.setAttributeNS("http://www.w3.org/1999/xlink","href","#template"),h.appendChild(k)}},a.prototype.clear=function(){for(;this._el.hasChildNodes();)this._el.removeChild(this._el.lastChild)},a}(),p="svg"===document.documentElement.tagName.toLowerCase(),q=p?o:m()?function(){function a(){this._elImage.src=this._elCanvas.toDataURL("image/png"),this._elImage.style.display="block",this._elCanvas.style.display="none"}function d(a,b){var c=this;if(c._fFail=b,c._fSuccess=a,null===c._bSupportDataURI){var d=document.createElement("img"),e=function(){c._bSupportDataURI=!1,c._fFail&&_fFail.call(c)},f=function(){c._bSupportDataURI=!0,c._fSuccess&&c._fSuccess.call(c)};return d.onabort=e,d.onerror=e,d.onload=f,d.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",void 0}c._bSupportDataURI===!0&&c._fSuccess?c._fSuccess.call(c):c._bSupportDataURI===!1&&c._fFail&&c._fFail.call(c)}if(this._android&&this._android<=2.1){var b=1/window.devicePixelRatio,c=CanvasRenderingContext2D.prototype.drawImage;CanvasRenderingContext2D.prototype.drawImage=function(a,d,e,f,g,h,i,j){if("nodeName"in a&&/img/i.test(a.nodeName))for(var l=arguments.length-1;l>=1;l--)arguments[l]=arguments[l]*b;else"undefined"==typeof j&&(arguments[1]*=b,arguments[2]*=b,arguments[3]*=b,arguments[4]*=b);c.apply(this,arguments)}}var e=function(a,b){this._bIsPainted=!1,this._android=n(),this._htOption=b,this._elCanvas=document.createElement("canvas"),this._elCanvas.width=b.width,this._elCanvas.height=b.height,a.appendChild(this._elCanvas),this._el=a,this._oContext=this._elCanvas.getContext("2d"),this._bIsPainted=!1,this._elImage=document.createElement("img"),this._elImage.style.display="none",this._el.appendChild(this._elImage),this._bSupportDataURI=null};return e.prototype.draw=function(a){var b=this._elImage,c=this._oContext,d=this._htOption,e=a.getModuleCount(),f=d.width/e,g=d.height/e,h=Math.round(f),i=Math.round(g);b.style.display="none",this.clear();for(var j=0;e>j;j++)for(var k=0;e>k;k++){var l=a.isDark(j,k),m=k*f,n=j*g;c.strokeStyle=l?d.colorDark:d.colorLight,c.lineWidth=1,c.fillStyle=l?d.colorDark:d.colorLight,c.fillRect(m,n,f,g),c.strokeRect(Math.floor(m)+.5,Math.floor(n)+.5,h,i),c.strokeRect(Math.ceil(m)-.5,Math.ceil(n)-.5,h,i)}this._bIsPainted=!0},e.prototype.makeImage=function(){this._bIsPainted&&d.call(this,a)},e.prototype.isPainted=function(){return this._bIsPainted},e.prototype.clear=function(){this._oContext.clearRect(0,0,this._elCanvas.width,this._elCanvas.height),this._bIsPainted=!1},e.prototype.round=function(a){return a?Math.floor(1e3*a)/1e3:a},e}():function(){var a=function(a,b){this._el=a,this._htOption=b};return a.prototype.draw=function(a){for(var b=this._htOption,c=this._el,d=a.getModuleCount(),e=Math.floor(b.width/d),f=Math.floor(b.height/d),g=['<table style="border:0;border-collapse:collapse;">'],h=0;d>h;h++){g.push("<tr>");for(var i=0;d>i;i++)g.push('<td style="border:0;border-collapse:collapse;padding:0;margin:0;width:'+e+"px;height:"+f+"px;background-color:"+(a.isDark(h,i)?b.colorDark:b.colorLight)+';"></td>');g.push("</tr>")}g.push("</table>"),c.innerHTML=g.join("");var j=c.childNodes[0],k=(b.width-j.offsetWidth)/2,l=(b.height-j.offsetHeight)/2;k>0&&l>0&&(j.style.margin=l+"px "+k+"px")},a.prototype.clear=function(){this._el.innerHTML=""},a}();QRCode=function(a,b){if(this._htOption={width:256,height:256,typeNumber:4,colorDark:"#000000",colorLight:"#ffffff",correctLevel:d.H},"string"==typeof b&&(b={text:b}),b)for(var c in b)this._htOption[c]=b[c];"string"==typeof a&&(a=document.getElementById(a)),this._android=n(),this._el=a,this._oQRCode=null,this._oDrawing=new q(this._el,this._htOption),this._htOption.text&&this.makeCode(this._htOption.text)},QRCode.prototype.makeCode=function(a){this._oQRCode=new b(r(a,this._htOption.correctLevel),this._htOption.correctLevel),this._oQRCode.addData(a),this._oQRCode.make(),this._el.title=a,this._oDrawing.draw(this._oQRCode),this.makeImage()},QRCode.prototype.makeImage=function(){"function"==typeof this._oDrawing.makeImage&&(!this._android||this._android>=3)&&this._oDrawing.makeImage()},QRCode.prototype.clear=function(){this._oDrawing.clear()},QRCode.CorrectLevel=d}();
+  </script>
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    :root {
+      --bg-dark: #0a0f1d;
+      --card-bg: rgba(23, 32, 54, 0.88);
+      --border-glow: rgba(255, 255, 255, 0.12);
+      --gold: #f59e0b;
+      --emerald: #10b981;
+      --pink: #ec4899;
+      --coral: #f43f5e;
+      --cyan: #06b6d4;
+      --purple: #8b5cf6;
+      --amber: #f97316;
+      --blue: #0ea5e9;
+      --yellow: #eab308;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    body {
+      background: radial-gradient(circle at 50% 10%, #1a2744 0%, #0a0f1d 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Global Navigation Header */
+    header {
+      background: rgba(10, 15, 29, 0.95);
+      border-bottom: 2px solid rgba(245, 158, 11, 0.35);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-logo-3d {
+      font-size: 28px;
+      display: inline-block;
+      animation: floatBadge 2.4s ease-in-out infinite alternate;
+      filter: drop-shadow(0 6px 12px rgba(245, 158, 11, 0.4));
+    }
+    .brand-titles h1 {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 40%, #10b981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .brand-titles p {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+    .badge-live {
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      animation: pulseGlow 1.2s infinite alternate;
+    }
+    .view-toggle {
+      display: flex;
+      background: #172036;
+      border-radius: 10px;
+      padding: 3px;
+      border: 1px solid #2d3748;
+    }
+    .toggle-tab {
+      padding: 7px 16px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      color: var(--text-muted);
+      background: transparent;
+      transition: all 0.2s;
+    }
+    .toggle-tab.active {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #0f172a;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 16px 20px;
+      max-width: 1440px;
+      margin: 0 auto;
+      width: 100%;
+      gap: 16px;
+    }
+
+    /* ==========================================================
+       HOST VIEW (Big Screen Projection Arena)
+       ========================================================== */
+    #host-view {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+    }
+    .arena-status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border-glow);
+      border-radius: 16px;
+      padding: 14px 22px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    }
+    .status-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .status-badge {
+      font-size: 13px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .status-badge.waiting { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid #3b82f6; }
+    .status-badge.racing { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; animation: pulseGlow 0.8s infinite alternate; }
+    .status-badge.finished { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid #f59e0b; }
+
+    .timer-display {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-variant-numeric: tabular-nums;
+      color: #fff;
+    }
+    .controls-group {
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      padding: 9px 18px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .btn:active { transform: translateY(2px); }
+    .btn-start { background: linear-gradient(135deg, #10b981, #059669); color: #fff; }
+    .btn-reset { background: #26334d; color: #cbd5e1; border: 1px solid #3b4b68; }
+    .btn-sim { background: linear-gradient(135deg, #8b5cf6, #6d28d9); color: #fff; }
+
+    /* 9-Track Racetrack Arena */
+    .racetrack-arena {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glow);
+      border-radius: 18px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      position: relative;
+      overflow: hidden;
+    }
+    .finish-banner {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 75px;
+      width: 16px;
+      background: repeating-linear-gradient(
+        0deg,
+        #ffffff,
+        #ffffff 10px,
+        #000000 10px,
+        #000000 20px
+      );
+      z-index: 10;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    .finish-txt {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      color: #f59e0b;
+    }
+
+    /* 3D Animal Lane Track */
+    .track-lane {
+      background: rgba(11, 17, 33, 0.65);
+      border-radius: 10px;
+      padding: 6px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 58px;
+      overflow: hidden;
+      transition: background 0.2s;
+    }
+    .track-lane:hover {
+      background: rgba(11, 17, 33, 0.85);
+    }
+    .lane-branding {
+      width: 220px;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* 3D Animated Claymorphism Badge */
+    .badge-3d-wrap {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      perspective: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .badge-3d-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.25), transparent 70%), var(--team-color);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.4), inset 0 -3px 6px rgba(0, 0, 0, 0.35);
+      transform-style: preserve-3d;
+      animation: float3D 3s ease-in-out infinite alternate;
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+    }
+    .team-meta {
+      display: flex;
+      flex-direction: column;
+    }
+    .team-title {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+    }
+    .team-slogan {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .team-count {
+      font-size: 10px;
+      color: #64748b;
+    }
+
+    /* Runway & 3D Runner Entity */
+    .lane-runway {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      margin-right: 95px;
+    }
+    .runner-3d-entity {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0%;
+      transition: left 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 6;
+    }
+    .runner-avatar-3d {
+      font-size: 30px;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+      animation: idleBreathe 2s infinite ease-in-out alternate;
+    }
+    .runner-3d-entity.running .runner-avatar-3d {
+      animation: runGallop 0.26s infinite alternate ease-in-out;
+    }
+    .runner-stats-pill {
+      background: rgba(10, 15, 29, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fbbf24;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+    .speed-dust {
+      font-size: 13px;
+      opacity: 0;
+      margin-left: -6px;
+    }
+    .runner-3d-entity.running .speed-dust {
+      opacity: 0.85;
+      animation: dustTrail 0.35s infinite;
+    }
+
+    /* Host Bottom Section (QR + Live Commercial Feed) */
+    .host-bottom-grid {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 16px;
+    }
+    .qr-join-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glow);
+      border-radius: 18px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+    }
+    .qr-join-card h3 {
+      font-size: 15px;
+      font-weight: 900;
+      color: #fbbf24;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .room-code-tag {
+      background: rgba(14, 165, 233, 0.2);
+      color: #38bdf8;
+      border: 1px solid #0ea5e9;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+    .qr-frame {
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 154px;
+      min-height: 154px;
+    }
+    .url-updater-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      text-align: left;
+    }
+    .url-updater-box label {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+    .url-row {
+      display: flex;
+      gap: 6px;
+    }
+    .url-row input {
+      flex: 1;
+      background: #0a0f1d;
+      border: 1px solid #334155;
+      padding: 6px 10px;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 11px;
+      outline: none;
+    }
+    .btn-update-qr {
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+      background: #0ea5e9;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .marketing-ticker-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glow);
+      border-radius: 18px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .ticker-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 800;
+      color: #38bdf8;
+    }
+    .ticker-feed {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .ticker-item {
+      font-size: 12px;
+      background: rgba(11, 17, 33, 0.6);
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-left: 3px solid #3b82f6;
+    }
+
+    /* ==========================================================
+       MOBILE CONTROLLER VIEW (Smartphone Gamepad)
+       ========================================================== */
+    #mobile-view {
+      display: none;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 460px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .mobile-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border-glow);
+      border-radius: 22px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    .mobile-intro {
+      text-align: center;
+    }
+    .mobile-intro h2 {
+      font-size: 20px;
+      font-weight: 900;
+      color: #fbbf24;
+      letter-spacing: -0.5px;
+    }
+    .mobile-intro p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+    .teams-3d-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      max-height: 340px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    .team-card-select {
+      background: rgba(11, 17, 33, 0.7);
+      border: 2px solid #2d3748;
+      border-radius: 14px;
+      padding: 10px 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .team-card-select.selected {
+      border-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.18);
+      transform: scale(1.04);
+      box-shadow: 0 6px 16px rgba(245, 158, 11, 0.3);
+    }
+    .team-card-select .mascot-ico {
+      font-size: 28px;
+      animation: floatBadge 2s ease-in-out infinite alternate;
+    }
+    .team-card-select .team-lbl {
+      font-size: 11px;
+      font-weight: 800;
+      color: #f1f5f9;
+      line-height: 1.2;
+    }
+
+    .input-field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .input-field-group label {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+    .text-box {
+      background: #0a0f1d;
+      border: 1px solid #334155;
+      padding: 11px 14px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      font-weight: 600;
+    }
+    .text-box:focus { border-color: #3b82f6; }
+
+    /* Shake / Tap Main Gamepad */
+    .gamepad-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      text-align: center;
+    }
+    .rpm-gauge-box {
+      width: 100%;
+      background: #0a0f1d;
+      border: 1px solid #2d3748;
+      border-radius: 12px;
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .rpm-num {
+      font-size: 22px;
+      font-weight: 900;
+      color: #10b981;
+      font-variant-numeric: tabular-nums;
+    }
+    .giant-shake-btn {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #f59e0b, #b45309);
+      border: 7px solid #fbbf24;
+      color: #0a0f1d;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 12px 35px rgba(245, 158, 11, 0.45), inset 0 3px 6px rgba(255, 255, 255, 0.5);
+      transition: transform 0.08s ease;
+      touch-action: manipulation;
+    }
+    .giant-shake-btn:active {
+      transform: scale(0.92);
+      box-shadow: 0 4px 18px rgba(245, 158, 11, 0.6);
+    }
+    .btn-mascot-float {
+      font-size: 52px;
+      animation: floatBadge 1.8s infinite alternate;
+    }
+    .btn-action-txt {
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* Victory Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 200;
+      backdrop-filter: blur(10px);
+    }
+    .podium-modal {
+      background: linear-gradient(135deg, #172036, #0a0f1d);
+      border: 2px solid #f59e0b;
+      border-radius: 24px;
+      padding: 36px 40px;
+      text-align: center;
+      max-width: 480px;
+      width: 90%;
+      box-shadow: 0 20px 60px rgba(245, 158, 11, 0.35);
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .winner-trophy-3d {
+      font-size: 72px;
+      margin-bottom: 12px;
+      animation: floatBadge 2s infinite ease-in-out alternate;
+    }
+    .winner-headline {
+      font-size: 26px;
+      font-weight: 900;
+      color: #fbbf24;
+      margin-bottom: 6px;
+    }
+    .winner-kpi {
+      font-size: 14px;
+      color: #cbd5e1;
+      margin-bottom: 24px;
+    }
+
+    /* 3D Animations */
+    @keyframes float3D {
+      0% { transform: rotateY(-10deg) rotateX(8deg) translateY(0px); }
+      100% { transform: rotateY(12deg) rotateX(-8deg) translateY(-5px); }
+    }
+    @keyframes floatBadge {
+      from { transform: translateY(0px) rotate(-2deg); }
+      to { transform: translateY(-6px) rotate(3deg); }
+    }
+    @keyframes runGallop {
+      from { transform: translateY(-50%) rotate(-5deg) scale(1.05); }
+      to { transform: translateY(-58%) rotate(5deg) scale(0.95); }
+    }
+    @keyframes idleBreathe {
+      from { transform: translateY(-50%) scale(1); }
+      to { transform: translateY(-52%) scale(1.03); }
+    }
+    @keyframes dustTrail {
+      0% { opacity: 0; transform: scale(0.5); }
+      50% { opacity: 0.9; }
+      100% { opacity: 0; transform: scale(1.3) translateX(-10px); }
+    }
+    @keyframes pulseGlow {
+      from { opacity: 0.75; }
+      to { opacity: 1; filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.7)); }
+    }
+    @keyframes popIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header>
+    <div class="brand-group">
+      <span class="brand-logo-3d">🏆</span>
+      <div class="brand-titles">
+        <h1>CHIMELONG MARKETING DERBY 2026</h1>
+        <p>GrCN Marketing Offsite Banquet • Real-Time Shake Arena</p>
+      </div>
+      <span class="badge-live">LIVE ARENA</span>
+    </div>
+    <div class="view-toggle">
+      <button class="toggle-tab active" id="tab-host" onclick="switchView('host')">📺 Host Big Screen</button>
+      <button class="toggle-tab" id="tab-mobile" onclick="switchView('mobile')">📱 Mobile Gamepad</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOST VIEW (9-Track Racetrack Arena) -->
+    <div id="host-view">
+      <div class="arena-status-bar">
+        <div class="status-left">
+          <span class="status-badge waiting" id="arena-status-pill">WAITING FOR TEAMS TO SCAN</span>
+          <div class="timer-display" id="race-timer">00:00.0</div>
+        </div>
+        <div class="controls-group">
+          <button class="btn btn-sim" onclick="simulateAllTeams()">⚡ Simulate 9 Teams</button>
+          <button class="btn btn-start" id="btn-race-ctrl" onclick="toggleRace()">🚀 Countdown & Start!</button>
+          <button class="btn btn-reset" onclick="resetRace()">🔄 Reset Track</button>
+        </div>
+      </div>
+
+      <!-- 9 Dynamic Racetrack Lanes -->
+      <div class="racetrack-arena" id="arena-lanes-container">
+        <div class="finish-banner"></div>
+        <div class="finish-txt">FINISH LINE</div>
+        <!-- Lanes will be dynamically injected or defined -->
+      </div>
+
+      <!-- Host Bottom: QR Code + Commercial Live Feed -->
+      <div class="host-bottom-grid">
+        <div class="qr-join-card">
+          <div style="display:flex; justify-content:space-between; width:100%; align-items:center;">
+            <h3>Scan with Phone to Play</h3>
+            <span class="room-code-tag">ROOM: MKTG-2026</span>
+          </div>
+          <div class="qr-frame" id="qrcode-box"></div>
+          
+          <div class="url-updater-box">
+            <label>🔗 Mobile Join URL (Customizable):</label>
+            <div class="url-row">
+              <input type="text" id="custom-qr-url" placeholder="Enter public URL to update QR">
+              <button class="btn-update-qr" onclick="updateQR()">Update QR</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="marketing-ticker-card">
+          <div class="ticker-header">
+            <span>📢 Commercial Live Feed & Team Buzz</span>
+            <span style="font-size:12px; color:var(--text-muted);" id="roster-count">Active Racers: 0</span>
+          </div>
+          <div class="ticker-feed" id="ticker-feed">
+            <div class="ticker-item">💡 Welcome GrCN Marketers! Host click "Countdown & Start!" when ready!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE CONTROLLER VIEW -->
+    <div id="mobile-view">
+      <!-- Step 1: Onboarding Card -->
+      <div class="mobile-panel" id="mobile-onboard-panel">
+        <div class="mobile-intro">
+          <h2>🐯 Choose Your Marketing Animal</h2>
+          <p>9 Commercial Pods • Shake Phone to Accelerate</p>
+        </div>
+
+        <div class="input-field-group">
+          <label>Your Name / Table Number:</label>
+          <input type="text" class="text-box" id="player-nickname" placeholder="e.g. Tina | Table 1" value="Tina">
+        </div>
+
+        <div class="input-field-group">
+          <label>Select Your 3D Mascot Team:</label>
+          <div class="teams-3d-grid" id="mobile-team-selector">
+            <!-- 9 team options generated dynamically -->
+          </div>
+        </div>
+
+        <button class="btn btn-start" style="width:100%; justify-content:center; padding:14px; font-size:15px;" onclick="lockTeamAndEnter()">
+          ✅ Lock Team & Enter Arena
+        </button>
+      </div>
+
+      <!-- Step 2: Active Controller Gamepad -->
+      <div class="mobile-panel" id="mobile-controller-panel" style="display:none;">
+        <div class="mobile-intro">
+          <h2 id="my-team-banner">🐼 Team Growth Panda</h2>
+          <p id="controller-hint">Awaiting race countdown...</p>
+        </div>
+
+        <div class="gamepad-stage">
+          <div class="rpm-gauge-box">
+            <span style="font-size:12px; font-weight:700; color:var(--text-muted);">LIVE SPRINT VELOCITY:</span>
+            <span class="rpm-num" id="my-speed-readout">0 km/h</span>
+          </div>
+
+          <!-- Giant Interactive Shake / Tap Button -->
+          <div class="giant-shake-btn" id="shake-action-btn" onclick="triggerBoost()">
+            <span class="btn-mascot-float" id="btn-mascot-icon">🐼</span>
+            <span class="btn-action-txt">SHAKE / TAP!</span>
+          </div>
+
+          <p style="font-size:12px; color:var(--text-muted); line-height:1.5;">
+            🔥 <b>Shake your phone vigorously</b> up & down,<br>
+            or <b>rapidly tap the giant button</b> to turbo-boost!
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Olympic Victory Podium Modal -->
+  <div class="modal-backdrop" id="podium-modal">
+    <div class="podium-modal">
+      <div class="winner-trophy-3d">🏆</div>
+      <div class="winner-headline" id="podium-winner-title">Team Growth Panda Wins!</div>
+      <div class="winner-kpi" id="podium-winner-sub">Crushed the ROAS & Sprinted First Across the Finish Line!</div>
+      <button class="btn btn-start" style="margin:0 auto;" onclick="closePodium()">🎉 Next Round of Glory!</button>
+    </div>
+  </div>
+
+  <script>
+    // ==========================================================
+    // 9 Commercial Marketing Chimelong Animal Teams Specification
+    // ==========================================================
+    const TEAMS = {
+      panda: {
+        name: "Growth Panda",
+        mascot: "🐼",
+        color: "#10b981",
+        slogan: "High ROAS & Organic Scale",
+        kpi: "Scale fast, snack faster"
+      },
+      flamingo: {
+        name: "Viral Flamingo",
+        mascot: "🦩",
+        color: "#ec4899",
+        slogan: "Max Virality & Trend CTR",
+        kpi: "Born to trend on feeds"
+      },
+      tiger: {
+        name: "Disruptive Tiger",
+        mascot: "🐯",
+        color: "#f43f5e",
+        slogan: "Bold Category Disruption",
+        kpi: "Unleash the market beast"
+      },
+      giraffe: {
+        name: "Strategic Giraffe",
+        mascot: "🦒",
+        color: "#f59e0b",
+        slogan: "10,000-Foot Strategic Vision",
+        kpi: "Zero blind spots, max reach"
+      },
+      capybara: {
+        name: "Chill Capybara",
+        mascot: "🪵",
+        color: "#f97316",
+        slogan: "Zen Stability & High Retention",
+        kpi: "Peak ROI through calm execution"
+      },
+      koala: {
+        name: "Deep-Funnel Koala",
+        mascot: "🐨",
+        color: "#0ea5e9",
+        slogan: "Full-Funnel Lifecycle Nurture",
+        kpi: "Retaining users in deep sleep"
+      },
+      elephant: {
+        name: "Omnichannel Elephant",
+        mascot: "🐘",
+        color: "#8b5cf6",
+        slogan: "Unstoppable Market Footprint",
+        kpi: "Massive scale across channels"
+      },
+      peacock: {
+        name: "Brand-Lift Peacock",
+        mascot: "🦚",
+        color: "#06b6d4",
+        slogan: "Premium Creative & Aesthetic Lift",
+        kpi: "Pure aesthetic & premium prestige"
+      },
+      cheetah: {
+        name: "Agile Cheetah",
+        mascot: "🐆",
+        color: "#eab308",
+        slogan: "Real-Time Sprint & Rapid GTM",
+        kpi: "Lightning speed execution"
+      }
+    };
+
+    let gameState = "waiting"; // waiting | countdown | racing | finished
+    let raceProgress = {};
+    let teamRoster = {};
+    let myTeamKey = "panda";
+    let myName = "Tina";
+    let raceTimer = null;
+    let startTime = null;
+
+    // Cross-tab / Multi-device broadcast
+    const bus = new BroadcastChannel("chimelong_derby_mktg");
+
+    window.addEventListener("DOMContentLoaded", () => {
+      initLanes();
+      initMobileGrid();
+      initQR();
+      initSensor();
+      initBusListener();
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("role") === "mobile") {
+        switchView("mobile");
+      }
+    });
+
+    // Build 9 Lanes on Big Screen Racetrack
+    function initLanes() {
+      const container = document.getElementById("arena-lanes-container");
+      container.querySelectorAll(".track-lane").forEach(e => e.remove());
+
+      Object.entries(TEAMS).forEach(([key, t]) => {
+        raceProgress[key] = 0;
+        teamRoster[key] = 0;
+
+        const lane = document.createElement("div");
+        lane.className = "track-lane";
+        lane.id = `lane-${key}`;
+        lane.innerHTML = `
+          <div class="lane-branding">
+            <div class="badge-3d-wrap" style="--team-color: ${t.color};">
+              <div class="badge-3d-inner">${t.mascot}</div>
+            </div>
+            <div class="team-meta">
+              <span class="team-title" style="color: ${t.color};">${t.name}</span>
+              <span class="team-slogan">${t.slogan}</span>
+              <span class="team-count" id="count-${key}">0 Marketers</span>
+            </div>
+          </div>
+          <div class="lane-runway">
+            <div class="runner-3d-entity" id="runner-${key}" style="left: 0%;">
+              <span class="speed-dust">💨</span>
+              <span class="runner-avatar-3d">${t.mascot}</span>
+              <span class="runner-stats-pill" id="speed-${key}">0 km/h</span>
+            </div>
+          </div>
+        `;
+        container.appendChild(lane);
+      });
+    }
+
+    // Build Mobile 9-Team Selector Grid
+    function initMobileGrid() {
+      const grid = document.getElementById("mobile-team-selector");
+      grid.innerHTML = "";
+      Object.entries(TEAMS).forEach(([key, t]) => {
+        const card = document.createElement("div");
+        card.className = `team-card-select ${key === myTeamKey ? "selected" : ""}`;
+        card.onclick = () => selectMobileTeam(key, card);
+        card.innerHTML = `
+          <div class="mascot-ico">${t.mascot}</div>
+          <span class="team-lbl">${t.name}</span>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function selectMobileTeam(key, card) {
+      myTeamKey = key;
+      document.querySelectorAll(".team-card-select").forEach(c => c.classList.remove("selected"));
+      card.classList.add("selected");
+    }
+
+    function switchView(mode) {
+      document.getElementById("tab-host").classList.toggle("active", mode === "host");
+      document.getElementById("tab-mobile").classList.toggle("active", mode === "mobile");
+      document.getElementById("host-view").style.display = mode === "host" ? "flex" : "none";
+      document.getElementById("mobile-view").style.display = mode === "mobile" ? "flex" : "none";
+    }
+
+    // Inlined Pure JS QR Code Generation
+    function initQR() {
+      const defaultUrl = window.location.href.split("?")[0] + "?role=mobile&room=MKTG-2026";
+      document.getElementById("custom-qr-url").value = defaultUrl;
+      drawQR(defaultUrl);
+    }
+
+    function drawQR(text) {
+      const box = document.getElementById("qrcode-box");
+      box.innerHTML = "";
+      try {
+        new QRCode(box, {
+          text: text,
+          width: 150,
+          height: 150,
+          colorDark: "#0a0f1d",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.M
+        });
+      } catch (err) {
+        box.innerHTML = `<span style="color:#ef4444; font-size:11px;">QR Render Error</span>`;
+      }
+    }
+
+    function updateQR() {
+      const url = document.getElementById("custom-qr-url").value.trim();
+      if (url) {
+        drawQR(url);
+        addFeed(`🔗 QR Code re-routed to: <b>${url}</b>`);
+      }
+    }
+
+    // Mobile Onboarding
+    function lockTeamAndEnter() {
+      const val = document.getElementById("player-nickname").value.trim();
+      myName = val || "Secret Marketer";
+      document.getElementById("mobile-onboard-panel").style.display = "none";
+      document.getElementById("mobile-controller-panel").style.display = "flex";
+
+      const t = TEAMS[myTeamKey];
+      document.getElementById("my-team-banner").innerText = `${t.mascot} Team ${t.name}`;
+      document.getElementById("btn-mascot-icon").innerText = t.mascot;
+
+      broadcast("join", { name: myName, team: myTeamKey });
+      addFeed(`✨ <b>${myName}</b> drafted into [Team ${t.name}]!`);
+    }
+
+    // Accelerometer Motion (Shake Detection)
+    let lastX = 0, lastY = 0, lastZ = 0, lastTime = 0;
+    function initSensor() {
+      if (window.DeviceMotionEvent) {
+        window.addEventListener("devicemotion", e => {
+          if (gameState !== "racing") return;
+          const a = e.accelerationIncludingGravity;
+          if (!a) return;
+
+          const now = Date.now();
+          if (now - lastTime > 110) {
+            const diff = now - lastTime;
+            const delta = Math.abs(a.x + a.y + a.z - lastX - lastY - lastZ) / diff * 10000;
+            if (delta > 750) {
+              lastTime = now;
+              triggerBoost();
+            }
+            lastX = a.x; lastY = a.y; lastZ = a.z;
+          }
+        });
+      }
+    }
+
+    // Player Sprint Trigger
+    function triggerBoost() {
+      if (gameState !== "racing") {
+        const hint = document.getElementById("controller-hint");
+        if (hint) hint.innerText = "⚠️ Race not started! Eyes on the Big Screen!";
+        return;
+      }
+      if (navigator.vibrate) navigator.vibrate(35);
+      boostTeam(myTeamKey, 1.6);
+      broadcast("boost", { team: myTeamKey, delta: 1.6, player: myName });
+
+      // Update mobile speed display
+      const spd = Math.floor(35 + raceProgress[myTeamKey] * 0.7);
+      document.getElementById("my-speed-readout").innerText = `${spd} km/h`;
+    }
+
+    function boostTeam(teamKey, amount) {
+      if (gameState !== "racing") return;
+      raceProgress[teamKey] = Math.min(100, (raceProgress[teamKey] || 0) + amount);
+
+      const runner = document.getElementById(`runner-${teamKey}`);
+      if (runner) {
+        runner.style.left = `${raceProgress[teamKey]}%`;
+        runner.classList.add("running");
+        const speedTag = document.getElementById(`speed-${teamKey}`);
+        if (speedTag) speedTag.innerText = `${Math.floor(25 + raceProgress[teamKey] * 0.8)} km/h`;
+      }
+
+      if (raceProgress[teamKey] >= 96) {
+        finishRace(teamKey);
+      }
+    }
+
+    function finishRace(winnerKey) {
+      gameState = "finished";
+      clearInterval(raceTimer);
+      const pill = document.getElementById("arena-status-pill");
+      pill.className = "status-badge finished";
+      pill.innerText = "🏆 WINNER CROSSED THE LINE!";
+
+      const w = TEAMS[winnerKey];
+      document.getElementById("podium-winner-title").innerText = `${w.mascot} Team ${w.name} Takes Gold!`;
+      document.getElementById("podium-winner-sub").innerText = `"${w.kpi}" • Sprinted first into glory!`;
+      document.getElementById("podium-modal").style.display = "flex";
+
+      if (typeof confetti === "function") {
+        confetti({ particleCount: 180, spread: 85, origin: { y: 0.6 } });
+      }
+      addFeed(`👑 <b>Team ${w.name}</b> claims the 2026 Chimelong Marketing Crown!`);
+      broadcast("winner", { winner: winnerKey });
+    }
+
+    // Host Controls
+    function toggleRace() {
+      if (gameState === "waiting" || gameState === "finished") {
+        startCountdown();
+      }
+    }
+
+    function startCountdown() {
+      gameState = "countdown";
+      let count = 3;
+      const pill = document.getElementById("arena-status-pill");
+      pill.className = "status-badge racing";
+
+      const iv = setInterval(() => {
+        if (count > 0) {
+          pill.innerText = `🔥 ON YOUR MARKS... ${count}!`;
+          count--;
+        } else {
+          clearInterval(iv);
+          gameState = "racing";
+          pill.innerText = "⚡ GO GO GO! SHAKE YOUR PHONES!";
+          startStopwatch();
+          broadcast("start");
+        }
+      }, 900);
+    }
+
+    function startStopwatch() {
+      startTime = Date.now();
+      raceTimer = setInterval(() => {
+        const d = Date.now() - startTime;
+        const ms = Math.floor((d % 1000) / 100);
+        const s = Math.floor(d / 1000);
+        const m = Math.floor(s / 60);
+        document.getElementById("race-timer").innerText =
+          `${String(m).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}.${ms}`;
+      }, 80);
+    }
+
+    function resetRace() {
+      gameState = "waiting";
+      clearInterval(raceTimer);
+      document.getElementById("race-timer").innerText = "00:00.0";
+      const pill = document.getElementById("arena-status-pill");
+      pill.className = "status-badge waiting";
+      pill.innerText = "WAITING FOR TEAMS TO SCAN";
+      document.getElementById("podium-modal").style.display = "none";
+
+      Object.keys(TEAMS).forEach(k => {
+        raceProgress[k] = 0;
+        const runner = document.getElementById(`runner-${k}`);
+        if (runner) {
+          runner.style.left = "0%";
+          runner.classList.remove("running");
+          document.getElementById(`speed-${k}`).innerText = "0 km/h";
+        }
+      });
+      addFeed("🔄 Arena track has been reset for the next grand showdown!");
+      broadcast("reset");
+    }
+
+    function closePodium() {
+      resetRace();
+    }
+
+    // Simulation for 9 Teams (for demo preview)
+    function simulateAllTeams() {
+      if (gameState !== "racing") {
+        startCountdown();
+      }
+      setTimeout(() => {
+        const sim = setInterval(() => {
+          if (gameState !== "racing") {
+            clearInterval(sim);
+            return;
+          }
+          const keys = Object.keys(TEAMS);
+          const picked = keys[Math.floor(Math.random() * keys.length)];
+          boostTeam(picked, Math.random() * 3 + 1.2);
+        }, 90);
+      }, 3000);
+      addFeed("⚡ High-speed simulation activated across all 9 commercial marketing teams!");
+    }
+
+    function addFeed(html) {
+      const feed = document.getElementById("ticker-feed");
+      const it = document.createElement("div");
+      it.className = "ticker-item";
+      it.innerHTML = html;
+      feed.prepend(it);
+      while (feed.children.length > 9) feed.removeChild(feed.lastChild);
+    }
+
+    function broadcast(type, data = {}) {
+      try {
+        bus.postMessage({ type, data, ts: Date.now() });
+      } catch (e) {}
+    }
+
+    function initBusListener() {
+      bus.onmessage = e => {
+        const { type, data } = e.data || {};
+        if (type === "join") {
+          teamRoster[data.team] = (teamRoster[data.team] || 0) + 1;
+          const el = document.getElementById(`count-${data.team}`);
+          if (el) el.innerText = `${teamRoster[data.team]} Marketers`;
+          addFeed(`📱 <b>${data.name}</b> entered for 【Team ${TEAMS[data.team].name}】!`);
+          updateRosterCount();
+        } else if (type === "boost") {
+          boostTeam(data.team, data.delta);
+        } else if (type === "start") {
+          gameState = "racing";
+          const h = document.getElementById("controller-hint");
+          if (h) h.innerText = "🔥 SPRINT STARTED! SHAKE OR TAP RAPIDLY!";
+        } else if (type === "reset") {
+          resetRace();
+        }
+      };
+    }
+
+    function updateRosterCount() {
+      const total = Object.values(teamRoster).reduce((a, b) => a + b, 0);
+      document.getElementById("roster-count").innerText = `Active Racers: ${total}`;
+    }
+  </script>
+</body>
+</html>
